@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Závěrečný projekt </title>
+
+    <style type="text/css">
+        h1 {color:#0000FF;font-style:italic;}
+        h2 {color:#FF3333;font-style:italic;}
+        h3 {color:#FF00FF;font-style:italic;}
+    </style>    
+</head>
+
+
+<body>
+
+      <div id="header">></div> 
+
+      <div id="navigation">
+         <!--Odkazy na jednotlivý stránky-->
+          <ul style="margin:0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="index.html">Úvod</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="pocasi.html">Počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="lokace.html">Aktuální poloha</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpoved.html">Aktuální počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpovedpocasi.html">Předpověď počasí </a></li>        
+        </ul>
+      </div>
+
+
+      <div id="Day">     
+        
+       <b><p id="day"></p></b> <!--Stylování-->
+       
+       <!--Skript na aktuální den v týdnu-->
+       <script> 
+                var d = new Date();
+                var days = ["Něděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota"];
+                document.getElementById("day").innerHTML = days[d.getDay()]; 
+        </script>
+
+
+      <p id="date"></p>  
+
+       <!--Skript na aktuální datum-->
+        <script>
+        {
+          var d = new Date();
+          var n = d.toLocaleDateString();
+          document.getElementById("date").innerHTML = n;
+        }
+        </script>
+
+       <!--Skript na aktuální čas-->
+        <script>
+        function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        var y = today.getFullYear();
+        var d = today.getDate
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s ;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  
+        return i;
+      }
+      </script> 
+
+       <body onload="startTime()"> 
+
+      <div id="txt"></div>
+     
+      <div id="center">
+         
+      <img src="picture.jpeg" width="300" height="300">
+      <img src="picture1.jpeg" width="300" height="300">
+      <img src="picture4.jpeg" width="290" height="290">
+      <img src="picture2.jpeg" width="300" height="300">
+
+       </div>
+       
+        
+   
+      <div id="footer"> © Martin Hýbl 2020 </div>
+         
+</body>
+    </html>
+    

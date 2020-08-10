@@ -1,0 +1,204 @@
+* { padding: 0; margin: 0; }
+#header {
+    width: auto;
+    padding: 60px;
+    height: 100px;  
+    background-image: url("weather.png");
+
+   }
+
+#navigation {
+    color: rgb(26, 163, 187);
+    padding: 10px;
+    background: #37bfc4;
+    font-size: 12pt; 
+    text-align: center;
+
+   }
+
+#Day {
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    background: #47da29;
+    font-size: 13pt;   
+    text-align: center;  
+   }
+
+
+#footer { 
+    width: auto;
+    color: #333;
+    background: #47da29;
+    padding: 10px;
+    font-size: 12pt;
+    text-align: center; 
+   }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12pt;
+}
+
+#wrapper { 
+ margin: auto;
+ width: 100%;
+}
+
+
+#center { 
+ color: #333;
+ margin: 10px 13px;
+ font-size: 13pt;
+ background-color: white;
+
+}
+
+
+
+#WeatherWorld {
+  width: auto;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  background: #47da29;
+  font-size: 13pt;   
+  text-align: center;  
+ }
+
+
+
+.main{
+  width: auto;
+	margin-top: 50px;
+	border-color: rgb(10, 10, 10);
+  border-width: 0 0 2px;
+
+}
+
+#mainTitle{
+	width: auto;
+	margin: 20px 0 5px;
+	text-align: center;
+  font-size: 1.5em;
+}
+
+.searchContainer{
+	width: 300px;
+  margin: 30px auto;
+}
+
+input{
+	width: 70%;
+	font-size: 24px;
+  line-height: 30px;
+  background:white;
+}
+
+button{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	width: 40%;
+  margin-top: 10px;
+  background:grey;
+
+}
+
+#weatherResults{
+  text-align: center;
+  width: 100%;
+  padding: 5px 0 5px;
+  background-color: gray;
+}
+
+
+.CityName{
+  text-align: center;
+
+	width: 100%;	
+	padding: 20px 0 2px;
+}
+.WeatherC{
+  text-align: center;
+
+	font-size: 2em;
+	width: 100%;
+	padding: 2px 0 20px;
+}
+.WeatherTemp{
+  font-size:arial;
+  text-align: center;
+  width: 100%;
+  color: rgb(41, 7, 105);
+	padding: 5px 0 5px;
+}
+
+/*Background Colors*/
+.redBg{
+	background-color: rgb(179, 48, 48);
+}
+.blueBg{
+	background-color: rgb(28, 10, 194);
+}
+.greenBg{
+	background-color: rgb(29, 158, 4);
+}
+.orangeBg{
+	background-color: rgb(255, 166, 0)
+}
+.yellowBg{
+	background-color: rgba(238, 255, 0, 0.966);
+}
+.grayBg{
+	background-color: rgba(185, 185, 185, 0.404);
+}
+.pinkBg{
+	background-color: rgba(201, 20, 65, 0.404);
+}
+.purplekBg{
+	background-color: rgba(212, 0, 195, 0.404);
+}
+
+
+.color { 
+  font-size:40px; 
+  font-weight:bold; 
+  color:#009900; 
+  margin-left:10px; 
+} 
+.centering { 
+  text-align: center;
+  ; 
+} 
+
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fde2e2 !important;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  font-style: italic;
+}
+
+
+
+
+.iframe {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #37bfc4 ;
+
+  }

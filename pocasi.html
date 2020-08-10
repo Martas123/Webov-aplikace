@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Předpověď počasí </title> 
+
+    
+    <!-- Javascript -->
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="script_alt.js"></script>
+    <script src="script.js"></script>
+
+    <title>Předpověď počasí</title>
+
+    <style type="text/css">
+        h1 {color:#0000FF;font-style:italic;}
+        h2 {color:#FF3333;font-style:italic;}
+        h3 {color:#FF00FF;font-style:italic;}
+    </style>    
+</head>
+
+
+<body>
+     
+      <div id="header"><h1></h1></div> 
+
+      <div id="navigation">
+        <ul style="margin:0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="index.html">Úvod</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="pocasi.html">Počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="lokace.html">Aktuální poloha</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpoved.html">Aktuální počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpovedpocasi.html">Předpověď počasí </a></li>
+
+        </ul>
+      </div>
+
+
+     
+      <div id="WeatherWorld">  
+        <img src="teplomer.jpg" width="200" height="200">
+
+      <div class="navigation">
+      
+        <div id="mainTitle">Město</div>
+        
+        <div class='searchContainer'>
+            <input id="query" type="text" placeholder='Zadejte město'></input>
+            <button id="search">Přejít</button>
+        </div>
+    </div>
+
+  </div>
+</div>
+   
+<div id="weatherResults">
+    </div>
+
+    <div id="footer"> © Martin Hýbl 2020 </div>
+   
+    
+</body>
+</html>

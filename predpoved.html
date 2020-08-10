@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Předpověď počasí </title>  
+    <!-- Google Fonts -->
+
+    <!-- Javascript -->
+ 
+
+
+    <title>Předpověď počasí</title>
+
+    <style type="text/css">
+        h1 {color:#0000FF;font-style:italic;}
+        h2 {color:#FF3333;font-style:italic;}
+        h3 {color:#FF00FF;font-style:italic;}
+    </style>    
+</head>
+
+
+<body>
+  
+     
+      <div id="header"><h1></h1></div> 
+
+      <div id="navigation">
+        <ul style="margin:0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="index.html">Úvod</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="pocasi.html">Počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="lokace.html">Aktuální poloha</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpoved.html">Aktuální počasí</a></li>
+          <li style="margin-right:15px; display:inline;"><a href="predpovedpocasi.html">Předpověď počasí </a></li>
+
+
+          
+        </ul>
+      </div>
+
+
+      <div id="WeatherWorld">  
+
+        <div class="container">
+            <div class="row center">
+              <div class="col-7">
+                <p class="title"><h1>Informace o počasí</h1></p>
+              </div>
+            </div>
+
+
+
+            <div class="row search -center">
+
+                <div class="col-8 center">
+                  <form id="searchWeather">
+                    <input type="text" id="cityName" placeholder="Olomouc" class="mr">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="units" type="radio" id="metric" value="metric" checked>
+                      <label class="form-check-label" for="metric">°C</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="units" type="radio" id="imperial" value="imperial">
+                        <label class="form-check-label" for="imperial">°F</label>
+                      </div>
+                      <button type="submit" class="mr">Hledej</button>
+                    </form>
+                  </div>
+                </div>
+               
+                <div style="text-align:center">
+
+                <div class="row -center">
+                    <div class="col-4-center">
+                      <button id="currentLocation">Aktuální poloha</button>
+                      
+                    </div>
+                  </div>
+
+                  <div class="row display justify-content-center mt-5">
+                    <div class="col-md-5 col-lg-5" id="weatherGif">
+                    </div>   
+
+                    <div class="col-md-5 col-lg-5" id="tempData">
+                    </div>
+                   
+                <script src="./main.js"></script>
+
+            
+
+        </div>
+    </div>
+
+
+    <div id="footer"> © Martin Hýbl 2020 </div>
+  
+
+    
+</body>
+</html>
